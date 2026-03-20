@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-black/40 backdrop-blur-md border border-white/10;
+  }
+  .glow-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500;
+  }
+  .btn-glow {
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+    transition: all 0.2s;
+    border: 1px solid rgba(0,229,255,0.5);
+  }
+  .btn-glow:hover {
+    box-shadow: 0 0 30px rgba(0, 229, 255, 0.8);
+  }
+}
+
+body {
+  background: #000;
+  color: #ededed;
+}
